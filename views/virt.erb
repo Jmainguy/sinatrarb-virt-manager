@@ -1,14 +1,14 @@
 <center>
-<h1>Centos7 is <%= status %></h1>
+<h1><%= vm %> is <%= status %></h1>
 <br>
-<form action="/" method="post">
+<form action="/action" method="post">
   <h2>Please select an action</h2>
   <select name="action">
     <option value="restart">restart</option>
     <option value="start">start</option>
     <option value="destroy">stop</option>
   </select>
-    <input type="submit">
-</form>
-
+  <input type="submit">
+  <input type="hidden" name="vm" value="<%= vm %>">
 </center>
+</form>

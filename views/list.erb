@@ -1,0 +1,5 @@
+<h3><center>
+<% status.each do |line| %>
+  <p> <a href=/<%= line.split[1] %>><%= line.split[1] %></a> <%= line.split[2..-1].join(' ') %></p>
+<% end %>
+</h3></center>
